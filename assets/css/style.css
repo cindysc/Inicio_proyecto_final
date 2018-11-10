@@ -1,0 +1,305 @@
+/* Estilos generales */
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p, li, a, small {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Tamaño textos */
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+p {
+    color: hsla(0, 0%, 0%, 0.8);
+}
+
+@media only screen and (max-width : 767px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.625em;
+    }
+
+    h3 {
+        font-size: 1.375em;
+    }
+
+}
+
+/* Navbar */
+
+.navbar-academia {
+    background-color: #FF658D;
+    color: hsla(0, 100%, 100%, 0.52);
+}
+.icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-brand img {
+    max-width: 80px;
+}
+
+.navbar-nav > li > a{
+    color: #fff;
+    text-shadow: none;
+}
+.nav > li > a:hover {
+    background-color: initial;
+    color: hsla(0, 0%, 100%, .5);
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Header */
+.header_academia {
+    text-align: center;
+    height: 700px;
+    padding-top: 250px;
+    background-color: #f3f3f3;
+    background-image: url('../assets/img/fondo.jpg');
+    margin-bottom: 30px;
+}
+
+.header_academia h1 {
+    color: #FF658D;
+    font-size: 5em;
+    font-weight: 900;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+.header_academia h3 {
+    color: #FF658D;
+    font-family: 'Raleway', sans-serif;
+}
+@media only screen and (max-width : 767px) {
+
+    .header_academia {
+        height: 500px;
+        padding-top: 100px;
+        background-position: center;
+    }
+
+    .header_academia h1 {
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+
+    .header_academia p {
+        padding: 1rem 4rem;
+    }
+
+}
+/* cuadros */
+.cuadro{
+    background-color: #da0080;
+    height: 160px;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.cuadro_centro{
+    background-color: #ba007c;
+    margin: -10px 0 0 0;
+    height: 180px;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+.cuadro a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.cuadro_centro a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+/* cursos */
+.cursos h2{
+    text-align: center;
+    padding: 60px 0 30px 0;
+}
+.thumbnail {
+    border: 0;
+    -webkit-box-shadow: initial;
+    padding: 0;
+}
+.caption{
+    padding: 15px 0 20px 10px;
+}
+.svg-inline--fa  {
+    color: #888888;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.caption h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.card {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.11);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card.with-media .date {
+    display: block;
+    background-color: #f3f3f3;
+    padding: 15px 0 8px 20px;
+    font-size: 1.2em;
+    color: #8a8a8a;
+    position: absolute;
+    margin-top: -10px;
+    width: 100%;
+}
+.card.with-media .title {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.2em;
+    padding: 25px 20px 10px 20px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #4d4d4f;
+    margin-top: 30px;
+}
+.card.with-media .footer {
+    position: absolute;
+    bottom: 0;
+    padding: 15px 20px;
+    width: 100%;
+    border-top: 1px solid #f3f3f3;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+.datos__inner p{
+    display: inline-block;
+    font-size: 1.1em;
+    padding-left: 10px;
+}
+.datos{
+    padding-left: 20px;
+    height: 240px;
+}
+.tag{
+    color: #FF658D;
+}
+.monitor p{
+    padding-top: 8px;
+    font-size: 1.2em;
+    color: #FF658D;
+}
+.clase-button-cerrar{
+    background-color: #ffffff;
+    background-image: none;
+    color: #666666;
+    padding: 6px 12px;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #cccccc;
+}
+.clase-button{
+    background-color: #FF658D;
+    background-image: none;
+    color: #fff;
+    padding: 6px 12px;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+}
+.clase-button:focus, .clase-button:hover {
+    background-color: #FF89A7;
+    background-position: 0 -15px;
+    color: #ffffff;
+}
+
+/* actividades pasadas */
+.actividades{
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.actividades__inner_img{
+    max-width: 279px;
+    display: inline-block;
+}
+
+/* nosotros */
+.nosotros{
+    background-color: #FF658D;
+    height: 20vh;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+.resumen{
+    font-size: 1.3em;
+}
+.nosotros__inner h3{
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.nosotros__inner_monitor{
+    display: inline-block;
+    padding: 0 30px 0 0;
+    text-align: center;
+}
+.nosotros__inner_monitor img{
+    border-radius: 50%;
+    max-width: 17vh;
+}
+
+/* contacto */
+.contacto{
+    padding: 10px 0 10px 0;
+}
+.info_contacto{
+    margin: 30px 0 20px 0;
+    color: #666666;
+}
+.info_contacto h4{
+    padding: 20px 0 0 0;
+}
+.rrss{
+    margin: 20px 0 10px 0;
+}
+.rrss a{
+    padding: 0 10px 0 0;
+}
+footer{
+    background-color: #e5e5e5;
+    padding: 30px 0 0 0;
+    margin-top: 40px;
+}
