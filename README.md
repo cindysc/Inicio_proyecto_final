@@ -25,4 +25,4 @@ Primer entregable proyecto final front end
     -   Imágenes: Se encuentran dentro de la guía de estilos
     -   Iconos: Formato svg dentro de guía de estilos y otros de Font-awesome
 
-    <p><a target="_blank" rel="noopener noreferrer" href="/cindysc/Ejercicio_10/blob/master/img/barbershop_sketch.jpg"><img src="/img/IMG_3112.JPG" alt="Sketch barbershop desktop y mobile" style="max-width:100%;"></a></p>
+    <p><a target="_blank" rel="noopener noreferrer" href="/cindysc/Inicio_proyecto_final/blob/master/img/barbershop_sketch.jpg"><img src="/img/IMG_3112.JPG" alt="Sketch desktop" style="max-width:100%;"></a></p>
