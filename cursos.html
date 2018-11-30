@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,600,700" rel="stylesheet">
     <!-- Main Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Swiper slider -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -30,11 +28,8 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right navbar__navigation">
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Nosotros</a></li>
                 </ul>
             </div>
         </div>
@@ -63,40 +58,6 @@
         <!-- Fin beneficios -->
     </header>
     <!--Fin Header-->
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="parallax-bg" style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)" data-swiper-parallax="-23%"></div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="title" data-swiper-parallax="-300">Slide 1</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="title" data-swiper-parallax="-300">Slide 3</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination swiper-pagination-white"></div>
-      <!-- Add Navigation -->
-      <div class="swiper-button-prev swiper-button-white"></div>
-      <div class="swiper-button-next swiper-button-white"></div>
-    </div>
-
-
     <!--Inicio cursos -->
     <div class="container">
         <div class="row">
@@ -543,42 +504,231 @@
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card with-media">
+                    <img src="assets/img/seminario_caja.jpg" alt="" class="img-responsive">
+                    <div class="date">
+                        <p><span class="tag">Curso</span> | 12 dic</p>
+                    </div>
+                    <div class="title">
+                        <h4>Pintura de caja vintage</h4>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__inner">
+                            <i class="far fa-calendar-alt"></i>
+                            <p>4 clases al mes</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-edit"></i>
+                            <p>Materiales no incluidos</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-clock"></i>
+                            <p>3 horas de duración</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-user"></i>
+                            <p>Clases de 15 personas</p>
+                        </div>
+                        <div class="monitor">
+                            <p>Monitor: Sandra Mena</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn clase-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Inscribirse</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                            <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="exampleModalLabel">Enviar inscripción | Nos contactaremos contigo a la brevedad</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nombre Apellido">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="example@mail.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">Teléfono</label>
+                                                <div class="col-sm-10">
+                                                    <input type="tel" class="form-control" id="inputPassword3" placeholder="930213568">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn clase-button-cerrar" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn clase-button">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin modal-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card with-media">
+                    <img src="assets/img/seminario_cinta.jpg" alt="" class="img-responsive">
+                    <div class="date">
+                        <p><span class="tag">Seminario</span> | 18 nov</p>
+                    </div>
+                    <div class="title">
+                        <h4>Pintura de bailarina </h4>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__inner">
+                            <i class="far fa-calendar-alt"></i>
+                            <p>1 clase</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-edit"></i>
+                            <p>Materiales incluidos</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-clock"></i>
+                            <p>3 horas de duración</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-user"></i>
+                            <p>Clases de 6 personas</p>
+                        </div>
+                        <div class="monitor">
+                            <p>Monitor: Marcela Vergara</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn clase-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Inscribirse</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                            <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="exampleModalLabel">Enviar inscripción | Nos contactaremos contigo a la brevedad</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nombre Apellido">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="example@mail.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">Teléfono</label>
+                                                <div class="col-sm-10">
+                                                    <input type="tel" class="form-control" id="inputPassword3" placeholder="930213568">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn clase-button-cerrar" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn clase-button">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin modal-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card with-media">
+                    <img src="assets/img/taller_caja.jpg" alt="" class="img-responsive">
+                    <div class="date">
+                        <p><span class="tag">Taller</span> | 20 dic</p>
+                    </div>
+                    <div class="title">
+                        <h4>Decoración de caja</h4>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__inner">
+                            <i class="far fa-calendar-alt"></i>
+                            <p>4 clases al mes</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-edit"></i>
+                            <p>Materiales no incluidos</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-clock"></i>
+                            <p>3 horas de duración</p>
+                        </div>
+                        <div class="datos__inner">
+                            <i class="far fa-user"></i>
+                            <p>Clases de 15 personas</p>
+                        </div>
+                        <div class="monitor">
+                            <p>Monitor: Gustavo Figueroa</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn clase-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Inscribirse</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                            <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="exampleModalLabel">Enviar inscripción | Nos contactaremos contigo a la brevedad</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nombre Apellido">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="example@mail.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3" class="col-sm-2 control-label">Teléfono</label>
+                                                <div class="col-sm-10">
+                                                    <input type="tel" class="form-control" id="inputPassword3" placeholder="930213568">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn clase-button-cerrar" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn clase-button">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin modal-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <!--Fin cursos -->
 
-
-
-    <!--Inicio Nosotros -->
-    <div class="nosotros">
-        <h2>Quiénes somos</h2>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 nosotros__inner">
-                <h3>Nosotros</h3>
-                <p class="resumen">Somos un grupo dedicado a las manualidades y queremos compartir nuestro conocimiento a más personas, además de entregar un espacio para sociabilizar, compartir y aprender distintas técnicas.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 nosotros__inner">
-                <h3>Monitores</h3>
-                <div class="nosotros__inner_monitor">
-                    <img src="assets/img/monitor2.jpg" alt="Monitor">
-                    <h4>Marcia Contreras</h4>
-                    <p>@mcontreras<br>+56 928305661</p>
-                </div>
-                <div class="nosotros__inner_monitor">
-                    <img src="assets/img/monitor3.jpg" alt="Monitor">
-                    <h4>Sandra Mena</h4>
-                    <p>@smena<br>+56 921305462</p>
-                </div>
-                <div class="nosotros__inner_monitor">
-                    <img src="assets/img/monitor1.jpg" alt="Monitor">
-                    <h4>Camilo Sepúlveda</h4>
-                    <p>@csepulveda<br>+56 930284253</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Fin Nosotros -->
     <!--Inicio footer -->
     <footer>
         <div class="container">
@@ -603,8 +753,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Font Awesome 5 -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    <!-- Swiper slider -->
-    <script src="assets/js/swiper.min.js"></script>
 </body>
 
 </html>
