@@ -26,22 +26,6 @@ p {
     color: hsla(0, 0%, 0%, 0.8);
 }
 
-@media only screen and (max-width : 767px) {
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.625em;
-    }
-
-    h3 {
-        font-size: 1.375em;
-    }
-
-}
-
 /* Navbar */
 
 .navbar-academia {
@@ -80,7 +64,7 @@ p {
     height: 700px;
     padding-top: 250px;
     background-color: #f3f3f3;
-    background-image: url('../assets/img/fondo.jpg');
+    background-image: url('../img/fondo.jpg');
     margin-bottom: 30px;
 }
 
@@ -101,24 +85,7 @@ p {
     color: #FF658D;
     font-family: 'Raleway', sans-serif;
 }
-@media only screen and (max-width : 767px) {
 
-    .header_academia {
-        height: 500px;
-        padding-top: 100px;
-        background-position: center;
-    }
-
-    .header_academia h1 {
-        font-size: 3em;
-        padding-bottom: 20px;
-    }
-
-    .header_academia p {
-        padding: 1rem 4rem;
-    }
-
-}
 /* cuadros */
 .cuadro{
     background-color: #da0080;
@@ -312,4 +279,79 @@ footer{
     background-color: #e5e5e5;
     padding: 30px 0 0 0;
     margin-top: 40px;
+}
+
+/*galeria imágenes*/
+.example-image {
+    height: 21rem;
+    border-radius: 4px;
+    vertical-align: bottom;
+    margin: 10px 5px 5px 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*pag galeria de imagenes / img*/
+    .example-image {
+        height: 22rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*pag galeria de imagenes / img*/
+    .example-image {
+        height: 17rem;
+        margin: 5px 3px 5px 3px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.625em;
+    }
+
+    h3 {
+        font-size: 1.375em;
+    }
+    /*menu desplegable responsive*/
+    .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #ffffff;
+    }
+    .navbar-nav > li > a{
+        color: #FF658D;
+        border-top: 1px solid #ffe4eb;
+    }
+    .nav > li > a:hover{
+        color: #FF658D;
+    }
+    .nav > li > a:focus {
+        background-color: #f5f5f5;
+    }
+    /*pag inicio / header */
+    .header_academia {
+        height: 500px;
+        padding-top: 100px;
+        background-position: center;
+    }
+
+    .header_academia h1 {
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+
+    .header_academia p {
+        padding: 1rem 4rem;
+    }
+    /*pag galeria de imagenes / img*/
+    .example-image {
+        width: 13rem;
+        margin: 5px 5px 5px 5px;
+        height: auto;
+    }
+
 }
