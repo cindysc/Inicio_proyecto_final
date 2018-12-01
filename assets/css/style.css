@@ -290,6 +290,15 @@ footer{
     vertical-align: bottom;
     margin: 10px 5px 5px 5px;
 }
+.filtro {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray;
+}
+
+
 /*pag noticias*/
 .recorte{
     height: 350px;
@@ -324,6 +333,21 @@ footer{
     margin-bottom: 60px
 }
 /*pag contacto*/
+.header_articulo{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.header_articulo h1{
+    padding: 65px 0 0 0;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 400;
+    font-size: 2.8em;
+}
 .titulo-formulario{
     padding-bottom: 30px;
 }
@@ -402,6 +426,13 @@ footer{
     .recorte {
         height: 180px;
         overflow: hidden;
+    }
+    /*pag contacto*/
+    .header_articulo{
+        height: 160px;
+    }
+    .header_articulo h1{
+        font-size: 2.5em;
     }
 
 }
