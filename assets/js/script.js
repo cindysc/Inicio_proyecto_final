@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
 
     /* filtro gris galería */
-    $('img').on('mouseover', function(){
+    $('.example-image').on('mouseover', function(){
         $(this).toggleClass('filtro');
     });
 
