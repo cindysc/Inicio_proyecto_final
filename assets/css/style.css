@@ -159,7 +159,7 @@ p{
     width: 100%;
 }
 .card.with-media .title {
-    display: block;
+    display: inline-block;
     width: 100%;
     background-color: #fff;
     font-size: 1.2em;
@@ -168,6 +168,9 @@ p{
     text-align: left;
     color: #4d4d4f;
     margin-top: 30px;
+}
+.card.with-media .title h4{
+    display: inline-block;
 }
 .card.with-media .footer {
     position: absolute;
@@ -191,6 +194,14 @@ a:focus, a:hover {
 }
 .tag{
     color: #FF658D;
+    display: inline-block;
+}
+.tag_add{
+    color: #FF658D;
+    display: inline-block;
+    font-size: 1.2em;
+    padding-left: 12px;
+    margin-bottom: 0;
 }
 .monitor p{
     padding-top: 8px;
@@ -313,18 +324,19 @@ footer{
 }
 .vermas{
     color: #FF658D;
-    cursor: pointer;
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
 }
-.mas-contenido p a{
+.mas-contenido a{
     color:  #FF658D;
     border: 1px solid  #FF658D;
     text-align: center;
     padding: 10px;
     margin: 30px 0 60px 0;
 }
-.mas-contenido p a:hover{
+.mas-contenido .mas_art:hover{
     color: #ffffff;
     background-color: #FF658D;
 }
