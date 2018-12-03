@@ -39,7 +39,7 @@ Primer entregable proyecto final front end
     -   Nosotros: reseña del proyecto
     -   Footer: datos de contácto y mapa de ubicación
 
-###Objetivos de la interfaz
+### Objetivos de la interfaz
     -   El usuario pueda conocer el proyecto, ver claramente los cursos que están por impartirse, logrando inscribirse por medio de un formulario en el cual se entrega el nombre, el número de teléfono y el correo para contactar a la persona sobre la disponibilidad de cupos.
 
     <p><a target="_blank" rel="noopener noreferrer" href="/cindysc/Inicio_proyecto_final/blob/master/img/IMG_3112.JPG"><img src="/img/IMG_3112.JPG" alt="Sketch desktop" style="max-width:100%;"></a></p>
