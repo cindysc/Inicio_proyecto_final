@@ -1,9 +1,10 @@
 /* Estilos generales */
 body{
     color: #4d4d4f;
+    font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -35,6 +36,7 @@ p{
     background-color: #FF658D;
     color: hsla(0, 100%, 100%, 0.52);
 }
+
 .icon-bar {
     background-color: #ffffff;
 }
@@ -67,7 +69,10 @@ p{
     height: 700px;
     padding-top: 250px;
     background-color: #f3f3f3;
-    background-image: url('/img/fondo.jpg');
+    background-image: url('../img/fondo_2_red.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
     margin-bottom: 30px;
 }
 
@@ -77,7 +82,7 @@ p{
 }
 
 .header_academia h1 {
-    color: #FF658D;
+    color: #ffffff;
     font-size: 5em;
     font-weight: 900;
     max-width: 1200px;
@@ -85,8 +90,8 @@ p{
     padding-bottom: 80px;
 }
 .header_academia h3 {
-    color: #FF658D;
-    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 /* cuadros */
@@ -252,7 +257,6 @@ a:focus, a:hover {
     text-align: center;
     color: #ffffff;
     padding-top: 30px;
-    margin-top: 40px;
 }
 .resumen{
     font-size: 1.3em;
@@ -346,12 +350,12 @@ footer{
 }
 /*pag contacto*/
 .header_articulo{
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/fondo_2_red.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: left;
     background-repeat: no-repeat;
     height: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .header_articulo h1{
     padding: 65px 0 0 0;
@@ -364,6 +368,54 @@ footer{
     padding-bottom: 30px;
 }
 
+/*index slider*/
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url('../img/descarga-rtl.svg');
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url('../img/descarga-ftl.svg');
+}
+.swiper-pagination-bullet-active{
+    background: #FF658D;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    margin-top: 40px;
+    }
+.swiper-slide {
+      font-size: 18px;
+      color:#4d4d4f;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px 40px 60px
+    }
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.2;
+        padding-top: 10px;
+    }
+.swiper-slide .subtitle {
+      font-size: 21px;
+    }
+.swiper-slide .text {
+        padding-top: 30px;
+        font-size: 15px;
+        max-width: 500px;
+        line-height: 1.4;
+    }
+.swiper-pagination{
+    padding-bottom: 20px;
+}
+.wrapper{
+    height: 300px;
+    overflow: hidden;
+    width: auto;
+    margin-bottom: 20px;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     /*pag galeria de imagenes / img*/
@@ -416,7 +468,7 @@ footer{
     }
 
     .header_academia h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         padding-bottom: 20px;
     }
 
@@ -441,48 +493,36 @@ footer{
     }
     /*pag contacto*/
     .header_articulo{
-        height: 160px;
+        height: 120px;
     }
     .header_articulo h1{
-        font-size: 2.5em;
+        font-size: 2em;
+        padding-top: 46px;
     }
-
-}
-
-
-/*slider*/
-
-.swiper-container {
-    width: 100%;
+    /*index slider*/
+    .swiper-slide .title {
+        font-size: 23px;
+    }
+    .swiper-slide .text {
+        padding-top: 10px;
+    }
+    .swiper-slide {
+        padding: 40px 20px 40px 20px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+    width: 153px;
+    margin-top: -59px;
+    background-size: 14px 44px;
+    bottom: 13px;
+    top: auto;
+    }
+    .swiper-pagination {
+        padding-bottom: 18px;
+    }
+    .wrapper {
     height: 100%;
-    background: #f1f1f1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
     }
-.swiper-slide {
-      font-size: 18px;
-      color:#4d4d4f;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 40px 60px;
-    }
-.parallax-bg {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 130%;
-      height: 100%;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-    }
-.swiper-slide .title {
-      font-size: 41px;
-      font-weight: 300;
-    }
-.swiper-slide .subtitle {
-      font-size: 21px;
-    }
-.swiper-slide .text {
-      font-size: 14px;
-      max-width: 400px;
-      line-height: 1.3;
-    }
+}

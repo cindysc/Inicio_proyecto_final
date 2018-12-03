@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Google Fonts | Raleway & lato -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,600,700" rel="stylesheet">
-    <!-- Main Styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Swiper slider -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-academia navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -499,14 +499,14 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn clase-button-cerrar" data-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn clase-button">Enviar</button>
+                                        <button id="confirmar" type="button" class="btn clase-button" data-dismiss="modal">Enviar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--fin modal-->
                         <!--hidden inicio modal-->
-                        <div class="modal fade hidden" id="exampleModal-final" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                        <div class="modal fade hidden" id="exampleModal-final" data-toggle="modal" data-target="#foo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -541,7 +541,9 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-5">
-                        <img src="assets/img/ceramica.jpg" alt="" class="img-responsive">
+                        <div class="wrapper">
+                            <img src="assets/img/ceramica.jpg" alt="" class="img-responsive">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -555,7 +557,9 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-5">
-                        <img src="assets/img/bordado.jpg" alt="" class="img-responsive">
+                        <div class="wrapper">
+                            <img src="assets/img/bordado.jpg" alt="" class="img-responsive">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -569,7 +573,9 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-5">
-                        <img src="assets/img/seminario_cinta.jpg" alt="" class="img-responsive">
+                        <div class="wrapper">
+                            <img src="assets/img/seminario_cinta.jpg" alt="" class="img-responsive">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -588,11 +594,11 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 nosotros__inner">
+            <div class="col-xs-12 col-sm-12 col-md-6 nosotros__inner">
                 <h3>Nosotros</h3>
                 <p class="resumen">Somos un grupo dedicado a las manualidades y queremos compartir nuestro conocimiento a más personas, además de entregar un espacio para sociabilizar, compartir y aprender distintas técnicas.</p>
             </div>
-            <div class="col-xs-12 col-sm-6 nosotros__inner">
+            <div class="col-xs-12 col-sm-12 col-md-6 nosotros__inner">
                 <h3>Monitores</h3>
                 <div class="nosotros__inner_monitor">
                     <img src="assets/img/monitor2.jpg" alt="Monitor">
@@ -624,8 +630,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3424751055577!2d-71.41888654970298!3d-33.04744938079747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689d84d4eaca915%3A0x49f3301690623eea!2sV+Centenario%2C+Quilpu%C3%A9%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1541816979591" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.361569738004!2d-71.55319394081216!3d-33.0206034560586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde0dd7c48cf%3A0x5488f77dc48d4d53!2sAv.+Libertad+204%2C+Vi%C3%B1a+del+Mar%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1543809239294" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                    </div>
                 </div>
             </div>
         </div>

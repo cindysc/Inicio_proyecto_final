@@ -15,36 +15,74 @@ $(document).ready(function(){
       },
     });
 
-    $('.card .footer:first').append('<p class="tag_add"> ¡Últimos cupos! </p>'); //index card - append
-    $('.card .title:last').prepend('<p class="tag">Nuevo: </p> ');  //index card -  preppend
-
-    /* Noticias - ver más noticias  */
-    $('#select_mas').click(function(e){
-        e.preventDefault();
-        $('.articulo').removeClass('hidden');
-        $(this).css('opacity', '0.5');
-        $(this).removeClass('mas_art');
+    /* scroll de menú */
+    $( window ).scroll(function() {
+        $( '.navbar' ).toggleClass( 'navbar-academia', $(this).scrollTop() > 50);
     });
 
-    /* filtro gris galería */
+    //index card - append
+    $('.card .footer:first').append('<p class="tag_add"> ¡Últimos cupos! </p>');
+
+    //index card -  preppend
+    $('.card .title:last').prepend('<p class="tag">Nuevo: </p> ');
+
+    //Noticias - ver más noticias
+    $('#select_mas').click(function(e){
+        e.preventDefault();
+        var mas = $(this);
+        $('.articulo').removeClass('hidden');
+        mas.removeClass('mas_art').css('opacity', '0.5');
+    });
+
+    //cursos - ver más cursos
+    $('#select_mas').click(function(e){
+        e.preventDefault();
+        var mas = $(this);
+        $('#mas_cursos').removeClass('hidden');
+        mas.removeClass('mas_art').css('opacity', '0.5');
+    });
+
+
+
+    /* filtro gris galería
     $('.example-image').on('mouseover', function(){
         $(this).toggleClass('filtro');
     });
+    function mostrar_ocultar(){
+        var color = document.getElementsByClassName('example-image')
 
-    /* alert inscripción terminada */
-    $('.modal-footer').on ('click', '.clase-button', function(){
-        alert("Gracias por su inscripción, nos contactaremos contigo a la brevedad");
+        if (color.mouseover) {
+            color.addClass('filtro');
+        }
+        else {
+            color.removeClass('filtro');
+
+        }
+    }*/
+
+
+
+
+
+
+
+
+
+    /* alert inscripción terminada
+    $('#confirmar').on ('click', function(){
+        alert('Gracias por su inscripción, nos contactaremos contigo a la brevedad');
         $('#exampleModal-final').removeClass('hidden');
-        $('#exampleModal').addClass('hidden');
 
 
     });
 
+    $( "#select_cursos" ).click(function() {
+      $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+      $( "div.second" ).slideUp( 300 ).fadeIn( 400 );
+    });*/
 
-    $('#cargar_mas').click (function(){
-        console.log('Gracias por su inscripción, nos contactaremos contigo a la brevedad');
-        $('#mas_cursos').removeClass('hidden');
-    });
+//$('#myModal').modal(options)
+
 
 
 
@@ -52,6 +90,8 @@ $(document).ready(function(){
 
 
     /* .card p:first
+
+
     $('.footer').on('click', 'button', function(){
         event.stopPropagation();
         $(this).parent().fadeOut(500);
