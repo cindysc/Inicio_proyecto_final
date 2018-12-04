@@ -32,12 +32,6 @@ Primer entregable proyecto final front end
     -   Nosotros: reseña del proyecto
     -   Footer: datos de contácto y mapa de ubicación
 
-### Secciones
-    -   Nav: barra de navegación
-    -   Header: Título principal y bajada con los beneficios de lso Cursos
-    -   Cursos: talleres, seminarios y cursos más próximos
-    -   Nosotros: reseña del proyecto
-    -   Footer: datos de contácto y mapa de ubicación
 
 ### Objetivos de la interfaz
     -   El usuario pueda conocer el proyecto, ver claramente los cursos que están por impartirse, logrando inscribirse por medio de un formulario en el cual se entrega el nombre, el número de teléfono y el correo para contactar a la persona sobre la disponibilidad de cupos.
